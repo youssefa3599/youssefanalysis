@@ -1,0 +1,96 @@
+/* Auth.css */
+
+/* Full screen gradient background */
+.auth-container {
+  height: 100vh; /* fill viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom right, #a78bfa, #7c3aed);
+  padding: 20px;
+}
+
+
+/* Card styling */
+.auth-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Title styling */
+.auth-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7c3aed;
+  margin-bottom: 1rem;
+}
+
+.auth-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+/* Form inputs */
+.auth-card input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: 0.2s;
+}
+
+.auth-card input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.2);
+}
+
+/* Button styling */
+.auth-card button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #7c3aed;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.auth-card button:hover {
+  background-color: #5b21b6;
+}
+
+.auth-card button:disabled {
+  background-color: #d8b4fe;
+  cursor: not-allowed;
+}
+
+/* Error messages */
+.auth-error {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Toggle link */
+.auth-toggle {
+  color: #7c3aed;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: 5px;
+}

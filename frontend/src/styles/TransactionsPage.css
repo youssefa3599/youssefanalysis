@@ -1,0 +1,123 @@
+/* TransactionsPage.css */
+
+/* Page container */
+.transactions-page {
+  padding: 20px;
+  background: #f9f5ff; /* soft lavender */
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Page title */
+.transactions-page h1 {
+  text-align: center;
+  color: #6a0dad; /* purple */
+  margin-bottom: 30px;
+}
+
+/* TransactionForm overrides */
+.transactions-page .transaction-form {
+  background: #fdfaff;
+  border: 2px solid #d1c4e9;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.transactions-page .transaction-form h3 {
+  color: #8e44ad;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.transactions-page .transaction-form input,
+.transactions-page .transaction-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #d1c4e9;
+  border-radius: 6px;
+  background: #fffafa;
+  color: #4b0082;
+}
+
+.transactions-page .transaction-form input:focus,
+.transactions-page .transaction-form select:focus {
+  border-color: #8e44ad;
+  box-shadow: 0 0 4px rgba(142, 68, 173, 0.5);
+  outline: none;
+}
+
+.transactions-page .transaction-form button {
+  width: 100%;
+  padding: 12px;
+  background: #8e44ad;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.transactions-page .transaction-form button:hover {
+  background: #6a0dad;
+}
+
+/* TransactionList table */
+.transactions-page .transaction-list {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.transactions-page .transaction-list thead {
+  background: #8e44ad;
+  color: #fff;
+}
+
+.transactions-page .transaction-list th,
+.transactions-page .transaction-list td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #d1c4e9;
+}
+
+.transactions-page .transaction-list tbody tr:nth-child(even) {
+  background: #f4eaff;
+}
+
+.transactions-page .transaction-list tbody tr:hover {
+  background: #e6d6f7;
+}
+
+.transactions-page .transaction-list td button {
+  background: #8e44ad;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.transactions-page .transaction-list td button:hover {
+  background: #6a0dad;
+}
+
+.transactions-page .transaction-list .income {
+  color: #00cc00;
+  font-weight: bold;
+}
+
+.transactions-page .transaction-list .expense {
+  color: #ff3333;
+  font-weight: bold;
+}

@@ -1,0 +1,62 @@
+.transaction-list {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  background: #f9f5ff; /* soft lavender background */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.transaction-list thead {
+  background: #8e44ad; /* purple header */
+  color: #fff;
+}
+
+.transaction-list th, 
+.transaction-list td {
+  padding: 12px 10px;
+  text-align: center;
+  border-bottom: 1px solid #d1c4e9;
+}
+
+/* Make Date, Category, and Description cells black */
+.transaction-list tbody td:nth-child(1), /* Date */
+.transaction-list tbody td:nth-child(2), /* Category */
+.transaction-list tbody td:nth-child(4)  /* Description */ {
+  color: #000;
+}
+
+.transaction-list tbody tr:nth-child(even) {
+  background: #f4eaff; /* alternating row */
+}
+
+.transaction-list tbody tr:hover {
+  background: #e6d6f7;
+}
+
+.transaction-list td button {
+  background: #8e44ad;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.transaction-list td button:hover {
+  background: #6a0dad;
+}
+
+.transaction-list .income {
+  color: #00cc00;
+  font-weight: bold;
+}
+
+.transaction-list .expense {
+  color: #ff3333;
+  font-weight: bold;
+}
